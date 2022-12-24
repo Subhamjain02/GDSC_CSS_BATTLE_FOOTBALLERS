@@ -32,15 +32,36 @@ rel="stylesheet"
             width: 130px;
             height: 130px;
             background-color: #A20025;
-
+            z-index: 2;
         }
         .semi{
             height: 75px;
-            width: 80px;
+            width: 65px;
             border-radius: 50%;
             background-color: transparent;
             box-shadow: inset -35px 0px 0px 0px #6D8764;
-            margin-left: -25px;
+            margin-left: -20px;
+        }
+
+        .flip{
+            box-shadow: inset 35px 0px 0px 0px #6D8764;
+            margin-left: 20px;
+        }
+
+        .t1{
+            height: 65px;
+            width: 75px;
+            border-radius: 50%;
+            box-shadow: inset 0px -35px 0px 0px #7b48ad;
+            margin-top: -15px;
+
+        }
+        .t2{
+            height: 65px;
+            width: 75px;
+            border-radius: 50%;
+            box-shadow: inset 0px 35px 0px 0px #7b48ad;
+           margin-top: 15px;
         }
     </style>
 </head>
@@ -48,6 +69,9 @@ rel="stylesheet"
     <div class="outer position-relative position-relative-example">
         <div class="inner position-absolute top-50 start-50 translate-middle"></div>
         <div class="semi position-absolute top-50 start-0 translate-middle"></div>
+        <div class="position-absolute top-0 start-50 translate-middle t1"></div>
+        <div class="position-absolute top-100 start-50 translate-middle t2"></div>
+        <div class="semi position-absolute top-50 start-100  translate-middle flip"></div>
     </div>
     <!-- MDB -->
 <script
